@@ -1,0 +1,10 @@
+{% extends 'base/base.html '%} <!--herencia de plantillas-->
+
+{% block content %} <!--bloque de contenido-->
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p}} 
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}
